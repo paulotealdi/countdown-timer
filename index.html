@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Timer</title>
+</head>
+<body>
+    
+    <h1 id="title">cats are lazy 🐈</h1>
+    <div id="countdown-div">
+        <div class="days countdown-single">
+            <div class="control">
+                <p onclick="day(-1)" class="control-button">-</p>
+                <p class="big-text" id="day">0</p>
+                <p onclick="day(1)" class="control-button">+</p>
+            </div>
+            <span>days</span>
+        </div>
+
+        <div class="hours countdown-single">
+            <div class="control">
+                <p onclick="hour(-1)" class="control-button">-</p>
+                <p class="big-text" id="hour">0</p>
+                <p onclick="hour(1)" class="control-button">+</p>
+            </div>
+            <span>hours</span>
+        </div>
+
+        <div class="minutes countdown-single">
+            <div class="control">
+                <p onclick="minute(-1)" class="control-button">-</p>
+                <p class="big-text" id="minute">0</p>
+                <p onclick="minute(1)" class="control-button">+</p>
+            </div>
+            <span>minutes</span>
+        </div>
+
+        <div class="seconds countdown-single">
+            <div class="control">
+                <p onclick="second(-1)" class="control-button">-</p>
+                <p class="big-text" id="second">0</p>
+                <p onclick="second(1)" class="control-button">+</p>
+            </div>
+            <span>seconds</span>
+        </div>
+    </div>
+
+    <div id="menu">
+        <button id="reset" onclick="reset_counter()">Reset</button>
+        <button id="start" onclick="start_counter()">Start</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
